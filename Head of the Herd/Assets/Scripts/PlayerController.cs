@@ -13,24 +13,41 @@ public class PlayerController : MonoBehaviour
     // [SerializedField] private Animator playerAnimator; // Holds ref. to player Animator component
 
     // Variables
-    [SerializeField] private float moveSpeed; // Holds player speed variable
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private Vector3 playerInput; // Holds player Input
+    [SerializeField] private float playerSpeed = 5; // Holds value for speed of movement
 
-    // Update is called once per frame
+    // Updates each frame
     void Update()
     {
-        playerRb.velocity = new Vector3(joystick.Horizontal * moveSpeed, playerRb.velocity.y, joystick.Vertical * moveSpeed);  // Input from the joystick controls the player movement in x- and z-axes
+        GatherInput();
+        LookAround();
+    }
+    
+    void FixedUpdate()
+    {
+        MovePlayer();
+    }
 
-        // Player faces in direction they are turning
-        if(joystick.Horizontal != 0 || joystick.Vertical != 0) // If the player is turning based on joystick input, then...
-        {
-            transform.rotation = Quaternion.LookRotation(playerRb.velocity); // Sets player forward in direction playerRb is facing
-            // playerAnimator.Set-("isRunning", true); // Set player animation to running animation
-        } // else {playerAnimator.Set-("isRunning", false); // Set player animation to idle animation}
+
+    // Gather player input
+    private void GatherInput()
+    {
+        playerInput = new Vector3(joystick.Horizontal * playerSpeed, 0, joystick.Vertical * playerSpeed); // Get player inputs for the x- and z-axes
+    }
+
+    // Rotate player to look around
+    private void LookAround()
+    {
+        // Find relative distance between where we are and where we want to be
+        var relativePos = (transform.position + playerInput) - transform.position;
+        var playerRotation = Quaternion.LookRotation(relativePos, Vector3.up); // Pass desired position to variable playerRotation
+
+        transform.rotation = playerRotation; // Set current object rotation to that based on the user input
+    }
+
+    // Move player based on user input
+    void MovePlayer()
+    {
+        playerRb.MovePosition(transform.position + transform.forward * playerInput.normalized.magnitude * playerSpeed * Time.deltaTime);
     }
 }
