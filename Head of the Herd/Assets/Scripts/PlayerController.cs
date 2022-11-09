@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     // Variables
     private Vector3 playerInput; // Holds player Input
     [SerializeField] private float playerSpeed = 5; // Holds value for speed of movement
+    [SerializeField] private float turnSpeed = 360; // Holds value for angle for rotation as one full rotation
 
     // Updates each frame
     void Update()
@@ -38,11 +39,16 @@ public class PlayerController : MonoBehaviour
     // Rotate player to look around
     private void LookAround()
     {
-        // Find relative distance between where we are and where we want to be
-        var relativePos = (transform.position + playerInput) - transform.position;
-        var playerRotation = Quaternion.LookRotation(relativePos, Vector3.up); // Pass desired position to variable playerRotation
+        if(playerInput != Vector3.zero)
+        {
+            var rotMatrix = Matrix4x4.Rotate(Quaternion.Euler(0, 45, 0)); // Skew the player input to account for isometric view
+            var skewedPlayerInput = rotMatrix.MultiplyPoint3x4(playerInput); // Multiplying vector by input to get new iso input
+            
+            var relativePos = (transform.position + skewedPlayerInput) - transform.position; // Find relative angle between where we are and where we want to be
+            var playerRotation = Quaternion.LookRotation(relativePos, Vector3.up); // Pass desired position to variable playerRotation
 
-        transform.rotation = playerRotation; // Set current object rotation to that based on the user input
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, playerRotation, turnSpeed * Time.deltaTime); // Set current object rotation to rotation based on the user input
+        }
     }
 
     // Move player based on user input
