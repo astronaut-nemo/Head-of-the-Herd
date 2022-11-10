@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    // References
-    [SerializeField] private GameObject player;
-
     // Variables
     [SerializeField] private float flightSpeed = 5;
 
