@@ -14,14 +14,15 @@ public class PlayerController : MonoBehaviour
     // Updates each frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        /* if(Input.GetKeyDown(KeyCode.Space))
         {
            Shoot();
         }
+        */
     }
 
     // Shooting Mechanic
-    private void Shoot()
+    public void Shoot()
     {
          // Spawn stones in direction player is facing
             Instantiate(projectilePrefab, firingPoint.position, firingPoint.rotation);

@@ -33,6 +33,7 @@ public class JoystickControl : MonoBehaviour
     // Gather player input
     private void GatherInput()
     {
+        // Add buffer so palyer only moves if joystick is pushed far; alternatively you can have a speed control
         playerInput = new Vector3(joystick.Horizontal * playerSpeed, 0, joystick.Vertical * playerSpeed); // Get player inputs for the x- and z-axes
     }
 
