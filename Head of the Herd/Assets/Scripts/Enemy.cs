@@ -13,6 +13,8 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // If collide with bullet, destroy
+        // If collide with sheep, destroy both and one point down
+        // If collide with player, game over
     }
 }
