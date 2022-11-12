@@ -47,10 +47,15 @@ public class Sheep : MonoBehaviour
             Debug.Log("Come 'ere sheep!");
             this.transform.SetParent(herdCenter.transform);
             gameManager.herdSize = gameManager.herdSize + 1;
+            
+            // Arrange sheep in herd: on adding a sheep, check the size of the herd and calculate the angle between sheep in each ring. Each ring has a specified no of sheep it can hold
+
+
             isInHerd = true;
         }
     }
 
+    // Sheep orbit around center
     void OrbitHerdCenter()
     {
         // Rotate around the herd center
