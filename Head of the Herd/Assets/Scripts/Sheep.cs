@@ -6,6 +6,7 @@ public class Sheep : MonoBehaviour
 {
     // References
     public static GameObject herdCenter; // Holds reference to object to rotate around
+    public GameManager gameManager;
 
     // Variables
     public bool isInHerd = false; // Checks if the sheep is in the range
@@ -16,6 +17,7 @@ public class Sheep : MonoBehaviour
     void Start()
     {
         herdCenter = GameObject.FindGameObjectWithTag("Herd Center");
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -44,6 +46,7 @@ public class Sheep : MonoBehaviour
             // If sheep is in range then add to parent group
             Debug.Log("Come 'ere sheep!");
             this.transform.SetParent(herdCenter.transform);
+            gameManager.herdSize = gameManager.herdSize + 1;
             isInHerd = true;
         }
     }
