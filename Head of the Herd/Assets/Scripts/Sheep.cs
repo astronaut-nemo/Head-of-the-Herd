@@ -59,9 +59,8 @@ public class Sheep : MonoBehaviour
     void OrbitHerdCenter()
     {
         // Rotate around the herd center
-        Debug.Log("Spin baby!");
+        // Debug.Log("Spin baby!");
         transform.RotateAround(herdCenter.transform.position, Vector3.up, rotationSpeed * Time.deltaTime);
     }
 
-    // On collision with predator, destroy, decrease score by one
 }
