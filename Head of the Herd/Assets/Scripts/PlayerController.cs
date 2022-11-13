@@ -14,11 +14,12 @@ public class PlayerController : MonoBehaviour
     // Updates each frame
     void Update()
     {
-        /* if(Input.GetKeyDown(KeyCode.Space))
+        /* FOR DEBUGGING PURPOSES */
+        if(Input.GetKeyDown(KeyCode.Space))
         {
            Shoot();
         }
-        */
+    
     }
 
     // Shooting Mechanic

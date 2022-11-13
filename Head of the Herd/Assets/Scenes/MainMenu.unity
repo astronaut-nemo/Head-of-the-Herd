@@ -625,6 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   herdSize: 0
+  herdAngle: 0
 --- !u!4 &292116342
 Transform:
   m_ObjectHideFlags: 0
@@ -1922,6 +1923,7 @@ GameObject:
   - component: {fileID: 1071219176}
   - component: {fileID: 1071219175}
   - component: {fileID: 1071219174}
+  - component: {fileID: 1071219181}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2056,6 +2058,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1071219181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071219173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7b5a9379b8c8c499ae0e1cbf70cbd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &1100343349
 GameObject:
   m_ObjectHideFlags: 0
