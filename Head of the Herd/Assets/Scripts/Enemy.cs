@@ -50,15 +50,15 @@ public class Enemy : MonoBehaviour
         
         Debug.Log("contact");
         // If colliding with the player, deal damage, game over
-        if(other.CompareTag("Player"))
-        {
-            Debug.Log("Enemy deals damage");
+    //     if(other.CompareTag("Player"))
+    //     {
+    //         Debug.Log("Enemy deals damage");
 
-            /*if(collider.GetComponent<Health>() != null) // Check if Health.cs is attached to the player
-            {
-                collider.GetComponent<Health>().Damage(damage); // Deal the enemy type damage
-                Debug.Log("Get Wrecked!");
-            }*/
-        }
+    //         /*if(collider.GetComponent<Health>() != null) // Check if Health.cs is attached to the player
+    //         {
+    //             collider.GetComponent<Health>().Damage(damage); // Deal the enemy type damage
+    //             Debug.Log("Get Wrecked!");
+    //         }*/
+    //     }
     }
 }

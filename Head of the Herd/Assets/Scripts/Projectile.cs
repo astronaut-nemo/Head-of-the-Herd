@@ -25,4 +25,10 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    // Hitting the enemy
+    void onTriggerEnter(Collider other){
+        Debug.Log("Entered trigger");
+    }
 }
+
