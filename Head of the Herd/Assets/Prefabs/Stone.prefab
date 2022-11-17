@@ -141,5 +141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 125701c02838f6b47b9faba34a00cc6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 18cbea019b605394690086bc6f888059, type: 2}
   firingPoint: {x: 0, y: 0, z: 0}
   maxProjectileDistance: 10

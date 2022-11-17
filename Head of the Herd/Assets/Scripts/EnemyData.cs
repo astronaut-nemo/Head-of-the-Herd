@@ -10,6 +10,6 @@ public class EnemyData : ScriptableObject
 {
     // Holds the parameters of the enemy
     public int hp;
-    public int damage;
+    // public int damage;
     public float speed;
 }
