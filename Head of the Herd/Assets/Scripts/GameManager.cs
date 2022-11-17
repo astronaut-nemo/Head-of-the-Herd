@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -33,12 +34,33 @@ public class GameManager : MonoBehaviour
 
     }
 
+///////////////////////////////////////////////////////////////////////////////////////////////
     /* GAME STATES */
     void GameOver()
     {
+        // Stop game from running in background
         gameOverPanel.gameObject.SetActive(true);
     }
 
+    // void PauseGame()
+    // {
+    //     // Pause game from in background
+    //     pauseGamePanel.gameObject.SetActive(true);
+    // }
+
+    /* END OF GAME STATES*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+    
+    /* LEVEL MANAGEMENT */
+    // Loads the specified scene
+    public async void LoadScene(string sceneName)
+    {
+        var scene = SceneManager.LoadSceneAsync(sceneName);
+    }
+    /* END OF LEVEL MANAGEMENT */
+
+/////////////////////////////////////////////////////////////////////////////////////////////
     /* SPAWN MANAGERS */
     // Spawning a wave
     void SpawnWave(GameObject[] objectPrefab)
