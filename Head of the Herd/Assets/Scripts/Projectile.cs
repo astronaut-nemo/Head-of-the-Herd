@@ -26,9 +26,17 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    // Hitting the enemy
-    void onTriggerEnter(Collider other){
-        Debug.Log("Entered trigger");
+    // Collisions
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Enemy")){
+            // Reduce enemy health
+            Debug.Log("Reduce health by amount");
+            if(other.GetComponent<Health>() != null){
+                Debug.Log("Get Wrecked Enemy!");
+                other.GetComponent<Health>().Damage(amount);
+            }
+        }
     }
 }
 

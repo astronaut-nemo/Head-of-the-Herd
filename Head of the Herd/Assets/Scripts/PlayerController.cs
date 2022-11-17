@@ -10,6 +10,13 @@ public class PlayerController : MonoBehaviour
     // References
     [SerializeField] private Transform firingPoint;
     [SerializeField] private GameObject projectilePrefab;
+    [SerializeField] private GameManager gameManager;
+
+    // Start is called once at the beginning
+    void Start()
+    {
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+    }
 
     // Updates each frame
     void Update()
@@ -27,5 +34,15 @@ public class PlayerController : MonoBehaviour
     {
          // Spawn stones in direction player is facing
             Instantiate(projectilePrefab, firingPoint.position, firingPoint.rotation);
+    }
+
+    // Collisions
+    void OnTriggerEnter(Collider other)
+    {
+        // If player collides with an enemy, the game is over
+        if(other.gameObject.CompareTag("Enemy")){
+            Debug.Log("You've been hit!");
+            gameManager.isGameOver = true;
+        }
     }
 }

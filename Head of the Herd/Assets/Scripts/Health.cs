@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    // References
+    public GameManager gameManager;
+
     // Variables
     [SerializeField] private int health = 100; // Holds the current amount of health
     private int MAX_HEALTH = 100; // Holds the maximum value of health
+
+    // Start is called once at the beginning
+    void Start()
+    {
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -72,5 +81,6 @@ public class Health : MonoBehaviour
     private void Die()
     {
         Debug.Log(this.gameObject + " is dead");
+        Destroy(this.gameObject);
     }
 }

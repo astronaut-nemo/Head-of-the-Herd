@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 6310325505578532915}
   - component: {fileID: 6310325505578532914}
   - component: {fileID: 6310325505578532917}
-  - component: {fileID: 6310325505578532916}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -134,6 +133,7 @@ MonoBehaviour:
   firingPoint: {fileID: 6310325506234228114}
   projectilePrefab: {fileID: 4810111831793729369, guid: 889edf2d0724c144eb632ebadf84579a,
     type: 3}
+  gameManager: {fileID: 0}
 --- !u!114 &6310325505578532917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,19 +150,6 @@ MonoBehaviour:
   joystick: {fileID: 0}
   playerSpeed: 5
   turnSpeed: 360
---- !u!114 &6310325505578532916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6310325505578532919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d7b5a9379b8c8c499ae0e1cbf70cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!1 &6310325506234228117
 GameObject:
   m_ObjectHideFlags: 0

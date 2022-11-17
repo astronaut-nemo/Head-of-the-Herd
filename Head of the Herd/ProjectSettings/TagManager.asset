@@ -8,6 +8,7 @@ TagManager:
   - Friend
   - Herd Center
   - Projectile
+  - Ball
   layers:
   - Default
   - TransparentFX
