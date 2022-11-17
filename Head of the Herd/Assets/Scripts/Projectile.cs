@@ -9,7 +9,8 @@ public class Projectile : MonoBehaviour
     [SerializeField] private Vector3 firingPoint;
     
     // Variables
-    [SerializeField] private float maxProjectileDistance ;
+    [SerializeField] private float maxProjectileDistance = 10;
+    [SerializeField] private int projectileDamage = 10;
     
     // Start is called before the first frame update
     void Start()
@@ -36,7 +37,7 @@ public class Projectile : MonoBehaviour
             Debug.Log("Reduce health by amount");
             if(other.GetComponent<Health>() != null){
                 Debug.Log("Get Wrecked Enemy!");
-                other.GetComponent<Health>().Damage(50);
+                other.GetComponent<Health>().Damage(projectileDamage);
             }
         }
     }
@@ -45,6 +46,7 @@ public class Projectile : MonoBehaviour
     private void SetWeaponValues()
     {
         maxProjectileDistance = data.travelDistance;
+        projectileDamage = data.damage;
     }
 }
 

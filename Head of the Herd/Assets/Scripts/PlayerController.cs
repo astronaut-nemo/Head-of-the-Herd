@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         // If player collides with an enemy, the game is over
         if(other.gameObject.CompareTag("Enemy")){
             Debug.Log("You've been hit!");
-            gameManager.isGameOver = true;
+            gameManager.GameOver();
         }
     }
 }
