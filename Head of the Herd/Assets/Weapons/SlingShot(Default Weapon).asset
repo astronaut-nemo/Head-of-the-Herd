@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SlingShot(Default Weapon)
   m_EditorClassIdentifier: 
   damage: 0
-  travelDistance: 0
+  travelDistance: 10
   projectileNumber: 0

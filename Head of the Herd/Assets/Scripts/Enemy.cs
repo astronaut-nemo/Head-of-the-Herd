@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         SetEnemyValues(); // Set the enemy data
+        player = GameObject.FindGameObjectWithTag("Player"); // Set reference to player in scene
     }
 
     // Update is called once per frame

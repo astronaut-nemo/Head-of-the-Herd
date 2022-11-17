@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     // References
-    [SerializeField] private GameObject[] animalPrefab;
+    [SerializeField] private GameObject[] enemyPrefab;
+    public GameObject gameOverPanel;
 
     // Sheep Variables
     public int herdSize;
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     // Variables
     [SerializeField] private float spawnRangeX = 40;
     [SerializeField] private float spawnRangeZ = 40;
+    private int spawnIndex;
     public bool isGameOver = false;
 
     // Start is called before the first frame update
@@ -25,17 +27,34 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // SpawnManager();
+        if(isGameOver){
+            GameOver();
+        }
+
     }
 
-// Controls the spawning in randomised positions
-    void SpawnManager()
+    /* GAME STATES */
+    void GameOver()
     {
-        int index = Random.Range(0, animalPrefab.Length);
+        gameOverPanel.gameObject.SetActive(true);
+    }
+
+    /* SPAWN MANAGERS */
+    // Spawning a wave
+    void SpawnWave(GameObject[] objectPrefab)
+    {
+        int index = Random.Range(0, objectPrefab.Length);
+        
+        Instantiate(objectPrefab[index], GenerateSpawnPosition(), objectPrefab[index].transform.rotation);
+    }
+
+    // Generates random spawn position
+    private Vector3 GenerateSpawnPosition()
+    {
         float spawnPosX = Random.Range(-spawnRangeX, spawnRangeX);
         float spawnPosZ = Random.Range(-spawnRangeZ, spawnRangeZ);
 
-        Vector3 randomSpawnPos = new Vector3(spawnPosX, animalPrefab[index].transform.position.y, spawnPosZ);
-        Instantiate(animalPrefab[index], randomSpawnPos, animalPrefab[index].transform.rotation);
+        Vector3 randomPos = new Vector3(spawnPosX, 0, spawnPosZ);
+        return randomPos;
     }
 }
