@@ -112,5 +112,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   isInHerd: 0
-  maxAttractDistance: 2
+  maxAttractDistance: 4
   rotationSpeed: 50
