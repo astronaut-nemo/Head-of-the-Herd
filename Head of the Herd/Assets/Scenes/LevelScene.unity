@@ -1169,7 +1169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a03244967bf80a4393489ec6c807470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: []
+  enemyPrefab:
+  - {fileID: 5430081127014033196, guid: 05d46368847f444489a52a9648c21770, type: 3}
+  - {fileID: 6512455092969445527, guid: 18788ff7ee642944d98de165d307a3e3, type: 3}
   sheepPrefab:
   - {fileID: 3618820000619681717, guid: b12b3ea4f5554394eb12816c55ce5760, type: 3}
   gameOverPanel: {fileID: 1501765468}
