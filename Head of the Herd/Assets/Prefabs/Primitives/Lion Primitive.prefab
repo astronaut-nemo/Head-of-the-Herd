@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3622378882951662239}
   - component: {fileID: 3622378882951662240}
   m_Layer: 0
-  m_Name: Lion
+  m_Name: Lion Primitive
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

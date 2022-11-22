@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7966174622701106889}
   - component: {fileID: 7966174622701106934}
   m_Layer: 0
-  m_Name: Jackal
+  m_Name: Jackal Primitive
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
