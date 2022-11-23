@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         // Stop game from running in background
+        Time.timeScale = 0f;
         gameOverPanel.gameObject.SetActive(true);
     }
 
@@ -61,6 +62,7 @@ public class GameManager : MonoBehaviour
     public async void LoadScene(string sceneName)
     {
         var scene = SceneManager.LoadSceneAsync(sceneName);
+        Time.timeScale = 1.0f;
     }
     /* END OF LEVEL MANAGEMENT */
 
