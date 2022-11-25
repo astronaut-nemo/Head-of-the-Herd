@@ -20,7 +20,7 @@ public class FollowPlayer : MonoBehaviour
     void Update()
     {
         // Look at and move towards player
-        transform.LookAt(player.transform);
+        // transform.LookAt(player.transform); // Commented out so that the herd would stop snapping to the player's rotation
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime); 
     }
 }

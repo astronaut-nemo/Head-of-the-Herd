@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
     /* UI MANAGEMENT */
-    
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
     /* GAME STATES */
@@ -53,10 +53,18 @@ public class GameManager : MonoBehaviour
         gameOverPanel.gameObject.SetActive(true);
     }
 
-    void PauseGame()
+    public void PauseGame()
     {
         // Pause game from running in background
+        Time.timeScale = 0f;
         pauseGamePanel.gameObject.SetActive(true);
+    }
+
+    public void ResumeGame()
+    {
+        // Pause game from running in background
+        Time.timeScale = 1.0f;
+        pauseGamePanel.gameObject.SetActive(false);
     }
 
     /* END OF GAME STATES*/

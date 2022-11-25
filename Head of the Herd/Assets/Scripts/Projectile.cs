@@ -36,6 +36,7 @@ public class Projectile : MonoBehaviour
             // Reduce enemy health
             Debug.Log("Reduce health by amount");
             if(other.GetComponent<Health>() != null){
+                CameraShake.Shake(0.5f, 0.5f);
                 Debug.Log("Get Wrecked Enemy!");
                 other.GetComponent<Health>().Damage(projectileDamage);
             }

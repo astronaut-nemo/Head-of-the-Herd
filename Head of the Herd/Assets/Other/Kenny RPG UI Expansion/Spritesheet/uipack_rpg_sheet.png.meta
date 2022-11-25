@@ -1,0 +1,2048 @@
+fileFormatVersion: 2
+guid: c3e6f509684abb4499f4838fa97bcc1f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arrowBeige_left.png
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 5
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5178c718c1ee375d0800000000000000
+      internalID: -3065845115110258923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowBeige_right.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 5
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d58c2d07194d3f0800000000000000
+      internalID: -876916113671692908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowBlue_left.png
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 5
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5cc54dee0ba93d0800000000000000
+      internalID: -3199050045481761375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowBlue_right.png
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 5
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d54f8165ea834100800000000000000
+      internalID: 91069135266465237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowBrown_left.png
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 5
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7498622c4e2e9cf0800000000000000
+      internalID: -243706425301756804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowBrown_right.png
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 5
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e69735a24080590800000000000000
+      internalID: -7707906182408999357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowSilver_left.png
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 5
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310b6c2a22d980a60800000000000000
+      internalID: 7640529539919425555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrowSilver_right.png
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 5
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ff0efd25744e9f0800000000000000
+      internalID: -440148442306511084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBack_horizontalLeft.png
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 164
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ec81e77d0feaf40800000000000000
+      internalID: 5741791383268150795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBack_horizontalMid.png
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed5c4b1ef2b90930800000000000000
+      internalID: 4110012939401715177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBack_horizontalRight.png
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 200
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5837cbc4bb7600d00800000000000000
+      internalID: 936862776637027205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBack_verticalBottom.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 314
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e96e9d3838c63ae0800000000000000
+      internalID: -1569847276214523418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBack_verticalMid.png
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 90
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d288bb007869d90800000000000000
+      internalID: -7091332126032253562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBack_verticalTop.png
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 63
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8eb6e1938fbcb360800000000000000
+      internalID: 7186829677185908364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBlue_horizontalBlue.png
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 63
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e22f4d26f63e2a00800000000000000
+      internalID: 733584220257985254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBlue_horizontalLeft.png
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 200
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306eebae7f467f720800000000000000
+      internalID: 2879881502684800515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBlue_horizontalRight.png
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 182
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4f74fef614d6840800000000000000
+      internalID: 5218899492203918591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBlue_verticalBottom.png
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 314
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c0c301b67d8a260800000000000000
+      internalID: 7109168866638171205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBlue_verticalMid.png
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 108
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3a14b882610e370800000000000000
+      internalID: 8349698072535737256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barBlue_verticalTop.png
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 99
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67691dc8be560490800000000000000
+      internalID: -7780427158427965587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barGreen_horizontalLeft.png
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 386
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22fa420a6d9491d0800000000000000
+      internalID: -3344875544598875602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barGreen_horizontalMid.png
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9ab5305f69e4290800000000000000
+      internalID: -7904214316921149014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barGreen_horizontalRight.png
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 182
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c319b870b1b804ca0800000000000000
+      internalID: -6034670552469499588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barGreen_verticalBottom.png
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 36
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1b8a80489377910800000000000000
+      internalID: 1834998612420506070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barGreen_verticalMid.png
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 81
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e1033e00aa2c9d0800000000000000
+      internalID: -2755453101209018879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barGreen_verticalTop.png
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 27
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87ebc9d9d92785c0800000000000000
+      internalID: -4213352910743148662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barRed_horizontalLeft.png
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 404
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826e4bb23e1fa0da0800000000000000
+      internalID: -5977699597387766232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barRed_horizontalMid.png
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 126
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2156757bfe6d31d0800000000000000
+      internalID: -3369414919916728018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barRed_horizontalRight.png
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 146
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35bc6fb0f4780e550800000000000000
+      internalID: 6188094661579950931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barRed_verticalBottom.png
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 0
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c833444d57110720800000000000000
+      internalID: 2810553331800553670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barRed_verticalMid.png
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 9
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f860179e8f2e6570800000000000000
+      internalID: 8461753039342037233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barRed_verticalTop.png
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 27
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2e90372357612d0800000000000000
+      internalID: -3308328016718208261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barYellow_horizontalLeft.png
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 368
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b04c1778c3ec9a10800000000000000
+      internalID: 1917657991484293299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barYellow_horizontalMid.png
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 45
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7755f672b24d3f800800000000000000
+      internalID: 645092453454402935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barYellow_horizontalRight.png
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 164
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e611be4a49f9ffa0800000000000000
+      internalID: -5766303750328084760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barYellow_verticalBottom.png
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 314
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d001c67a65fb532b0800000000000000
+      internalID: -5605363782295744499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barYellow_verticalMid.png
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 72
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00b872e7923fa5b0800000000000000
+      internalID: -5355005803999219697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barYellow_verticalTop.png
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 314
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d8644d02c36fc20800000000000000
+      internalID: 3239843093637664104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonLong_beige.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 181
+        width: 190
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2369ed97b20e89c60800000000000000
+      internalID: 7825250829889082930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonLong_beige_pressed.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 190
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60d9dfe8d7a88270800000000000000
+      internalID: 8253030867335237739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonLong_blue.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 275
+        width: 190
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015e42508ed8fa8c0800000000000000
+      internalID: -3985811117541366512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonLong_blue_pressed.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 190
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960de380b5aeacc70800000000000000
+      internalID: 8992257282699874409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonLong_brown.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 414
+        width: 190
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243e27691da9c04f0800000000000000
+      internalID: -861143203771653310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonLong_brown_pressed.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 369
+        width: 190
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2b03093f80b07c0800000000000000
+      internalID: -4104176793228889392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonLong_grey.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 463
+        width: 190
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993399f4c49c1ae80800000000000000
+      internalID: -8169026919483231335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonLong_grey_pressed.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 190
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520cd434ec5a32670800000000000000
+      internalID: 8512830025971384357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonRound_beige.png
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 398
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b385f6584a8a0e0800000000000000
+      internalID: -2258374320120644838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonRound_blue.png
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 436
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0c5d532a51f04a0800000000000000
+      internalID: -6625052740406624021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonRound_brown.png
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 360
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6625f5aeeb392880800000000000000
+      internalID: -8635304914333653394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonRound_grey.png
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 474
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a39e45b71a683e0800000000000000
+      internalID: -2051775029143062000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonSquare_beige.png
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 169
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d07f185ad3151260800000000000000
+      internalID: 7067577018730115286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonSquare_beige_pressed.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 373
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8bcf9660674a6e30800000000000000
+      internalID: 4497485657247042444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonSquare_blue.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 463
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4605f1b6f0b0ad0800000000000000
+      internalID: -2735075395936164667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonSquare_blue_pressed.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 328
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd61328bbbf07d530800000000000000
+      internalID: 3879586902925579997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonSquare_brown.png
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 120
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d6c95e26f00bf60800000000000000
+      internalID: 8047949451544522013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonSquare_brown_pressed.png
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 75
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 408cd47d8aa257b40800000000000000
+      internalID: 5437299029774813188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonSquare_grey.png
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 26
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65dc352e4c8745020800000000000000
+      internalID: 2329619694263455062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonSquare_grey_pressed.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 418
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ff4310f9e303720800000000000000
+      internalID: 2823825819002273684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursorGauntlet_blue.png
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15a93db3b15662b0800000000000000
+      internalID: -5591692054918224611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursorGauntlet_bronze.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3caeeb062362cf00800000000000000
+      internalID: 1135579071110884410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursorGauntlet_grey.png
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48bd17b57739d3130800000000000000
+      internalID: 3548154222282398596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursorHand_beige.png
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 2
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ddcaf92c5c75b820800000000000000
+      internalID: 2933387467584884181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursorHand_blue.png
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 2
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74bcc497329762a70800000000000000
+      internalID: 8801855715008105287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursorHand_grey.png
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3eba804f1fca8700800000000000000
+      internalID: 543474438185336381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursorSword_bronze.png
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 144
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4da444ed8a663ee0800000000000000
+      internalID: -1281719886287688372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursorSword_gold.png
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 181
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ff2d9b8406d6ef0800000000000000
+      internalID: -113328550142869694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursorSword_silver.png
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 323
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0bc67d5febc60b0800000000000000
+      internalID: -5733998262458994484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCheck_beige.png
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 313
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151c9e776d2d12460800000000000000
+      internalID: 7215279896600887633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCheck_blue.png
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 467
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4eeb57be13e2980800000000000000
+      internalID: -8561850954222213945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCheck_bronze.png
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 452
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef5954b41fd1e030800000000000000
+      internalID: 3522341663598534631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCheck_grey.png
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 422
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9110b9730c997b0800000000000000
+      internalID: -5216927348275734057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCircle_beige.png
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 29
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a790054af28ae50800000000000000
+      internalID: 6820754018416556629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCircle_blue.png
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 12
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3dedcbd50a28820800000000000000
+      internalID: 2919071832950625210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCircle_brown.png
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 343
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa1ab2610b9f22d70800000000000000
+      internalID: 9017043938630672815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCircle_grey.png
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 46
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e22e610d11d6860800000000000000
+      internalID: 7524690137840758341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCross_beige.png
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 328
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3951673b89facfb0800000000000000
+      internalID: -4626611290844866245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCross_blue.png
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 482
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2afc76699a8bee0800000000000000
+      internalID: -1245058833516092737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCross_brown.png
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 497
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6c6891379bdce50800000000000000
+      internalID: 6831320113791551198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconCross_grey.png
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 437
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9773e82407cc7800800000000000000
+      internalID: 611582470095337371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panelInset_beige.png
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 124
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2dbcaa5f2b2dc00800000000000000
+      internalID: 923997641766589172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panelInset_beigeLight.png
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 218
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc16d4113feb49fa0800000000000000
+      internalID: -5794796869342371381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panelInset_blue.png
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 30
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95819d354b44adc80800000000000000
+      internalID: -8297243822185179047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panelInset_brown.png
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 218
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f954b929f9cc60880800000000000000
+      internalID: -8644997448959572577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_beige.png
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 312
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7329d82aad5c88710800000000000000
+      internalID: 1695822802525721143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_beigeLight.png
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 36
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d6beb9bce61e4e0800000000000000
+      internalID: -1954158942528770799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_blue.png
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 412
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed184c26878e6c1a0800000000000000
+      internalID: -6789483784463679010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panel_brown.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eba342ab795806e0800000000000000
+      internalID: -1871147257634247708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      buttonRound_beige.png: -2258374320120644838
+      buttonSquare_brown.png: 8047949451544522013
+      barBack_horizontalMid.png: 4110012939401715177
+      buttonSquare_grey_pressed.png: 2823825819002273684
+      buttonLong_brown_pressed.png: -4104176793228889392
+      barRed_verticalBottom.png: 2810553331800553670
+      buttonLong_blue.png: -3985811117541366512
+      barYellow_horizontalLeft.png: 1917657991484293299
+      cursorGauntlet_blue.png: -5591692054918224611
+      cursorSword_silver.png: -5733998262458994484
+      buttonLong_grey.png: -8169026919483231335
+      iconCircle_beige.png: 6820754018416556629
+      arrowSilver_left.png: 7640529539919425555
+      barBlue_verticalBottom.png: 7109168866638171205
+      cursorHand_beige.png: 2933387467584884181
+      barBlue_verticalMid.png: 8349698072535737256
+      barBack_verticalMid.png: -7091332126032253562
+      iconCross_beige.png: -4626611290844866245
+      barGreen_verticalBottom.png: 1834998612420506070
+      iconCircle_grey.png: 7524690137840758341
+      barGreen_horizontalRight.png: -6034670552469499588
+      barGreen_verticalMid.png: -2755453101209018879
+      barRed_horizontalMid.png: -3369414919916728018
+      cursorSword_bronze.png: -1281719886287688372
+      barBack_horizontalRight.png: 936862776637027205
+      barRed_horizontalRight.png: 6188094661579950931
+      buttonLong_grey_pressed.png: 8512830025971384357
+      barYellow_horizontalMid.png: 645092453454402935
+      iconCheck_bronze.png: 3522341663598534631
+      buttonSquare_beige.png: 7067577018730115286
+      panelInset_blue.png: -8297243822185179047
+      panel_blue.png: -6789483784463679010
+      arrowBlue_right.png: 91069135266465237
+      panelInset_beige.png: 923997641766589172
+      barGreen_horizontalLeft.png: -3344875544598875602
+      buttonRound_grey.png: -2051775029143062000
+      cursorGauntlet_grey.png: 3548154222282398596
+      iconCross_grey.png: 611582470095337371
+      panel_beigeLight.png: -1954158942528770799
+      buttonSquare_blue_pressed.png: 3879586902925579997
+      iconCheck_blue.png: -8561850954222213945
+      barGreen_verticalTop.png: -4213352910743148662
+      iconCircle_blue.png: 2919071832950625210
+      barYellow_verticalMid.png: -5355005803999219697
+      barYellow_horizontalRight.png: -5766303750328084760
+      barYellow_verticalTop.png: 3239843093637664104
+      buttonSquare_grey.png: 2329619694263455062
+      iconCheck_beige.png: 7215279896600887633
+      arrowBrown_right.png: -7707906182408999357
+      iconCircle_brown.png: 9017043938630672815
+      buttonLong_blue_pressed.png: 8992257282699874409
+      arrowSilver_right.png: -440148442306511084
+      barBlue_verticalTop.png: -7780427158427965587
+      buttonSquare_blue.png: -2735075395936164667
+      barRed_verticalMid.png: 8461753039342037233
+      arrowBeige_left.png: -3065845115110258923
+      cursorHand_grey.png: 543474438185336381
+      barBack_verticalTop.png: 7186829677185908364
+      panel_brown.png: -1871147257634247708
+      panelInset_brown.png: -8644997448959572577
+      iconCross_blue.png: -1245058833516092737
+      buttonRound_brown.png: -8635304914333653394
+      cursorHand_blue.png: 8801855715008105287
+      barYellow_verticalBottom.png: -5605363782295744499
+      buttonLong_beige.png: 7825250829889082930
+      barBack_horizontalLeft.png: 5741791383268150795
+      barBack_verticalBottom.png: -1569847276214523418
+      iconCheck_grey.png: -5216927348275734057
+      arrowBeige_right.png: -876916113671692908
+      barGreen_horizontalMid.png: -7904214316921149014
+      buttonLong_brown.png: -861143203771653310
+      barBlue_horizontalBlue.png: 733584220257985254
+      barRed_horizontalLeft.png: -5977699597387766232
+      cursorGauntlet_bronze.png: 1135579071110884410
+      barBlue_horizontalRight.png: 5218899492203918591
+      buttonLong_beige_pressed.png: 8253030867335237739
+      panel_beige.png: 1695822802525721143
+      arrowBlue_left.png: -3199050045481761375
+      cursorSword_gold.png: -113328550142869694
+      buttonSquare_beige_pressed.png: 4497485657247042444
+      buttonRound_blue.png: -6625052740406624021
+      barBlue_horizontalLeft.png: 2879881502684800515
+      arrowBrown_left.png: -243706425301756804
+      buttonSquare_brown_pressed.png: 5437299029774813188
+      panelInset_beigeLight.png: -5794796869342371381
+      iconCross_brown.png: 6831320113791551198
+      barRed_verticalTop.png: -3308328016718208261
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
