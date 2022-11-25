@@ -11,7 +11,7 @@ public class JoystickControl : MonoBehaviour
     [SerializeField] private Rigidbody playerRb; // Holds ref. to player Rigidbody component
     [SerializeField] private FixedJoystick joystick; // Holds ref. to fixed joystick component
     // [SerializedField] private Animator playerAnimator; // Holds ref. to player Animator component
-    // ParticleSystem dustParticle;
+    // public ParticleSystem dustParticle;
 
     // Variables
     private Vector3 playerInput; // Holds player Input
@@ -58,5 +58,6 @@ public class JoystickControl : MonoBehaviour
     {
         playerRb.MovePosition(transform.position + transform.forward * playerInput.normalized.magnitude * playerSpeed * Time.deltaTime);
         // play dust particle system
+        // dustParticle.Play();
     }
 }

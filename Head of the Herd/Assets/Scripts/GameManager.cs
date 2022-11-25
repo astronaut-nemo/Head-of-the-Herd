@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject[] enemyPrefab;
     [SerializeField] private GameObject[] sheepPrefab;
     public GameObject gameOverPanel;
+    public GameObject pauseGamePanel;
 
     // Sheep Variables
     public int herdSize;
@@ -39,6 +40,11 @@ public class GameManager : MonoBehaviour
     }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    /* UI MANAGEMENT */
+    
+
+///////////////////////////////////////////////////////////////////////////////////////////////
     /* GAME STATES */
     public void GameOver()
     {
@@ -47,11 +53,11 @@ public class GameManager : MonoBehaviour
         gameOverPanel.gameObject.SetActive(true);
     }
 
-    // void PauseGame()
-    // {
-    //     // Pause game from in background
-    //     pauseGamePanel.gameObject.SetActive(true);
-    // }
+    void PauseGame()
+    {
+        // Pause game from running in background
+        pauseGamePanel.gameObject.SetActive(true);
+    }
 
     /* END OF GAME STATES*/
 
