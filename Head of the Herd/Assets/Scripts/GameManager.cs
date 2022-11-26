@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,36 +14,81 @@ public class GameManager : MonoBehaviour
 
     // Sheep Variables
     public int herdSize;
-    public float herdAngle;
+    
+    // Game Stats
+    public int score;
+    public int highScore;
+    public string playerRank;
+    private string[] playerTitles = new string[] {"Bunty Beginner", "Wooly Apprentice", "Sure-footed Shepherd", "Head of the Herd"};
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI playerRankText;
 
-    // Variables
+    // Spawning Variables
     [SerializeField] private float enemySpawnInterval;
     [SerializeField] private float maxEnemyInterval = 3.5f;
     [SerializeField] private float sheepSpawnInterval;
     [SerializeField] private float maxSheepInterval = 5.0f;
     [SerializeField] private float spawnRangeX = 40;
     [SerializeField] private float spawnRangeZ = 40;
+
     public bool isGameOver = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         StartCoroutine(Spawner(maxEnemyInterval, enemyPrefab));
         StartCoroutine(Spawner(maxSheepInterval, sheepPrefab));
+
+        herdSize = 0;
+        highScore = 30;
     }
 
     // Update is called once per frame
     void Update()
     {
+        UpdateScore();
+        PlayerRanking();
+
         // Randomise spawn intervals
         enemySpawnInterval = Random.Range(0, maxEnemyInterval);
         sheepSpawnInterval = Random.Range(0, maxSheepInterval);
     }
 
+    void UpdateScore(){
+        score = herdSize;
+
+        if(score > highScore){
+            highScore = score;
+        }
+
+        scoreText.text = score +"/"+ highScore;
+    }
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
     /* UI MANAGEMENT */
+    // Display current score and high score
 
+    // Give the player a title based on their high score
+    void PlayerRanking(){
+        if(highScore <= 5){
+            playerRank = playerTitles[0];
+            playerRankText.text = playerRank;
+        }
+        else if(highScore > 5 && highScore <= 10){
+            playerRank = playerTitles[1];
+            playerRankText.text = playerRank;
+        }
+        else if(highScore > 10 && highScore <= 20){
+            playerRank = playerTitles[2];
+            playerRankText.text = playerRank;
+        }
+        else if(highScore > 20){
+            playerRank = playerTitles[3];
+            playerRankText.text = playerRank;
+        }
+    }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
     /* GAME STATES */
@@ -50,21 +96,19 @@ public class GameManager : MonoBehaviour
     {
         // Stop game from running in background
         Time.timeScale = 0f;
-        gameOverPanel.gameObject.SetActive(true);
+        gameOverPanel.SetActive(true);
     }
 
     public void PauseGame()
     {
         // Pause game from running in background
         Time.timeScale = 0f;
-        pauseGamePanel.gameObject.SetActive(true);
     }
 
     public void ResumeGame()
     {
         // Pause game from running in background
         Time.timeScale = 1.0f;
-        pauseGamePanel.gameObject.SetActive(false);
     }
 
     /* END OF GAME STATES*/
@@ -75,7 +119,7 @@ public class GameManager : MonoBehaviour
     // Loads the specified scene
     public async void LoadScene(string sceneName)
     {
-        var scene = SceneManager.LoadSceneAsync(sceneName);
+        SceneManager.LoadSceneAsync(sceneName);
         Time.timeScale = 1.0f;
     }
     /* END OF LEVEL MANAGEMENT */

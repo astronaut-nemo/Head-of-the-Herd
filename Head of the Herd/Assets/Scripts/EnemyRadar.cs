@@ -53,7 +53,6 @@ public class EnemyRadar : MonoBehaviour
         if(other.CompareTag("Enemy"))
         {
             closestEnemy = GetClosestEnemy();
-            Debug.Log(closestEnemy + "has entered the radar");
             enemyContact = true;
         }
     }
