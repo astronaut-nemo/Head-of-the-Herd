@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     // Start is called once at the beginning
     void Start()
     {
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        gameManager = GameManager.instance;
     }
 
     // Update is called once per frame

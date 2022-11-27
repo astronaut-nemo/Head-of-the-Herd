@@ -6,6 +6,21 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+
+    // Prevent new instances of the game manager from being created
+    public static GameManager instance;
+
+    private void Awake()
+    {
+        if(instance==null){
+            instance = this;
+        }
+        else{
+            Destroy(gameObject);
+        }
+    }
+    
+    
     // References
     [SerializeField] private GameObject[] enemyPrefab;
     [SerializeField] private GameObject[] sheepPrefab;
@@ -39,9 +54,12 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         StartCoroutine(Spawner(maxEnemyInterval, enemyPrefab));
         StartCoroutine(Spawner(maxSheepInterval, sheepPrefab));
+        
+        // Get objects from UI
+        // gameOverPanel = GameObject.FindGameObjectWithTag("Game Over Panel");
 
         herdSize = 0;
-        highScore = 30;
+        score = 0;
     }
 
     // Update is called once per frame
@@ -53,22 +71,33 @@ public class GameManager : MonoBehaviour
         // Randomise spawn intervals
         enemySpawnInterval = Random.Range(0, maxEnemyInterval);
         sheepSpawnInterval = Random.Range(0, maxSheepInterval);
-    }
-
-    void UpdateScore(){
-        score = herdSize;
-
-        if(score > highScore){
-            highScore = score;
+        if(isGameOver){
+            GameOver();
         }
-
-        scoreText.text = score +"/"+ highScore;
     }
+
+ 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
     /* UI MANAGEMENT */
     // Display current score and high score
+    void UpdateScore(){
+        score = herdSize;
+
+        if(score > highScore){
+            PlayerPrefs.SetInt("HighScore", score);
+            highScore = PlayerPrefs.GetInt("HighScore", 0);
+        }
+
+        scoreText.text = score +"/"+ highScore;
+    }
+
+    // Reset the score on replay button click
+    public void ResetScore(){
+        score = 0;
+        herdSize = 0;
+    }
 
     // Give the player a title based on their high score
     void PlayerRanking(){
@@ -103,12 +132,14 @@ public class GameManager : MonoBehaviour
     {
         // Pause game from running in background
         Time.timeScale = 0f;
+        pauseGamePanel.SetActive(true);
     }
 
     public void ResumeGame()
     {
-        // Pause game from running in background
+        // Resume normal game time
         Time.timeScale = 1.0f;
+        pauseGamePanel.SetActive(false);
     }
 
     /* END OF GAME STATES*/

@@ -17,7 +17,7 @@ public class Sheep : MonoBehaviour
     void Start()
     {
         herdCenter = GameObject.FindGameObjectWithTag("Herd Center");
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        gameManager = GameManager.instance;
     }
 
     // Update is called once per frame

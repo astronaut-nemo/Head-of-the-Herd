@@ -8,7 +8,7 @@ TagManager:
   - Friend
   - Herd Center
   - Projectile
-  - Ball
+  - Game Over Panel
   layers:
   - Default
   - TransparentFX

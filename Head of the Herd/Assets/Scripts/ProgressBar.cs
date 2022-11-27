@@ -16,7 +16,7 @@ public class ProgressBar : MonoBehaviour
     
     private void Awake(){
         slider = gameObject.GetComponent<Slider>();
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        gameManager = GameManager.instance;
     }
 
     // Start is called before the first frame update
