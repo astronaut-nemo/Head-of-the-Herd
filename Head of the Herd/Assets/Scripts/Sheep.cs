@@ -43,11 +43,11 @@ public class Sheep : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy") && isInHerd){
             Debug.Log("Sheep is eaten");
+            
             // Play blood particle effect
-            // other.gameObject.GetComponent<Enemy>().bloodSplatter.Play();
             GameManager.instance.PlayParticleFX(this.transform, "Blood Splatter");
             SoundManager.instance.PlaySound(enemyEatClip);
-            
+
             gameManager.herdSize --;
             Destroy(this.gameObject);
             Destroy(other.gameObject);
