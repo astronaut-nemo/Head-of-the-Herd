@@ -27,7 +27,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject[] sheepPrefab;
     public GameObject gameOverPanel;
     public GameObject pauseGamePanel;
-    public ParticleSystem bloodSplatter;    
+    public ParticleSystem bloodSplatter;  
+    public ParticleSystem enemyExplosion;    
 
     // Sheep Variables
     public int herdSize;
@@ -199,10 +200,17 @@ public class GameManager : MonoBehaviour
         return randomPos;
     }
 
-    public void PlayParticleFX(Transform playPos)
+    public void PlayParticleFX(Transform playPos, string effectName)
     {
         // Check if the object wants to play the blood animation (for sheep death) or the explosion animation (for enemy death)
-        bloodSplatter.transform.position = playPos.position;
-        bloodSplatter.Play();
+        if(effectName == "Blood Splatter"){
+            bloodSplatter.transform.position = playPos.position;
+            bloodSplatter.Play();
+        }
+        else if (effectName == "Enemy Boom"){
+            enemyExplosion.transform.position = playPos.position;
+            enemyExplosion.Play();
+        }
+        
     }
 }

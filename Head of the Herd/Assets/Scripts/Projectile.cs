@@ -41,6 +41,7 @@ public class Projectile : MonoBehaviour
                 CameraShake.Shake(0.5f, 0.3f);
                 // hitParticle.Play();
                 SoundManager.instance.PlaySound(enemyHitClip);
+                GameManager.instance.PlayParticleFX(this.transform, "Enemy Boom");
                 other.GetComponent<Health>().Damage(projectileDamage);
             }
         }
