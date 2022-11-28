@@ -166,6 +166,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  sheepJoinClip: {fileID: 8300000, guid: 9ebe046bdf4d8af4aac93408bd53c71c, type: 3}
+  sheepDieClip: {fileID: 8300000, guid: b65cc5f1243846248ae8b92db919b3ba, type: 3}
+  enemyEatClip: {fileID: 8300000, guid: 65cb25e8f51751f49a3a0ef5f1afc1ff, type: 3}
   isInHerd: 0
   maxAttractDistance: 4
   rotationSpeed: 30

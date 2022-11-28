@@ -7,11 +7,11 @@ public class ProgressBar : MonoBehaviour
 {
     // References
     private Slider slider;
-    private ParticleSystem particles;
+    public ParticleSystem particles;
     public GameManager gameManager;
 
     // Variables
-    public float targetProgress = 0;
+    private float targetProgress = 0;
     public float fillSpeed = 0.5f;
     
     private void Awake(){

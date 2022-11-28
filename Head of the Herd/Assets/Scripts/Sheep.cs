@@ -7,6 +7,9 @@ public class Sheep : MonoBehaviour
     // References
     public static GameObject herdCenter; // Holds reference to object to rotate around
     public GameManager gameManager;
+    [SerializeField] private AudioClip sheepJoinClip; // Sound of sheep baa
+    [SerializeField] private AudioClip sheepDieClip; // Sound of sheep die
+    [SerializeField] private AudioClip enemyEatClip; // Sound of crunch
 
     // Variables
     public bool isInHerd = false; // Checks if the sheep is in the range
@@ -41,6 +44,9 @@ public class Sheep : MonoBehaviour
         if(other.gameObject.CompareTag("Enemy") && isInHerd){
             Debug.Log("Sheep is eaten");
             // Play blood particle effect
+            // other.gameObject.GetComponent<Enemy>().bloodSplatter.Play();
+            GameManager.instance.PlayParticleFX(this.transform);
+            SoundManager.instance.PlaySound(enemyEatClip);
             gameManager.herdSize --;
             Destroy(this.gameObject);
             Destroy(other.gameObject);
@@ -64,6 +70,7 @@ public class Sheep : MonoBehaviour
             // Maybe store new sheep children into an array and then use AI behaviour to control them
 
             isInHerd = true;
+            SoundManager.instance.PlaySound(sheepJoinClip);
         }
     }
 

@@ -7,10 +7,12 @@ public class Projectile : MonoBehaviour
     // References
     [SerializeField] private ProjectileData data;
     [SerializeField] private Vector3 firingPoint;
+    // [SerializeField] private ParticleSystem hitParticle;
     
     // Variables
     [SerializeField] private float maxProjectileDistance = 10;
     [SerializeField] private int projectileDamage = 10;
+    [SerializeField] private AudioClip enemyHitClip; // Sound of hit
     
     // Start is called before the first frame update
     void Start()
@@ -37,7 +39,8 @@ public class Projectile : MonoBehaviour
             Debug.Log("Reduce health by amount");
             if(other.GetComponent<Health>() != null){
                 CameraShake.Shake(0.5f, 0.3f);
-                Debug.Log("Get Wrecked Enemy!");
+                // hitParticle.Play();
+                SoundManager.instance.PlaySound(enemyHitClip);
                 other.GetComponent<Health>().Damage(projectileDamage);
             }
         }

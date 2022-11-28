@@ -5,8 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     // References
-    [SerializeField] private EnemyData data; // Holds reference to the 
+    [SerializeField] private EnemyData data; // Holds reference to the enemy stats
     [SerializeField] private GameObject player; // Holds reference to the player object
+    public ParticleSystem bloodSplatter;
 
     // Variables
     // [SerializeField] private int damage = 5; // Holds default amount of damage to deal

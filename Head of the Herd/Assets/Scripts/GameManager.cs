@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         else{
             Destroy(gameObject);
         }
+        DontDestroyOnLoad(gameObject);
     }
     
     
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject[] sheepPrefab;
     public GameObject gameOverPanel;
     public GameObject pauseGamePanel;
+    public ParticleSystem bloodSplatter;    
 
     // Sheep Variables
     public int herdSize;
@@ -33,7 +35,7 @@ public class GameManager : MonoBehaviour
     // Game Stats
     public int score;
     public int highScore;
-    public string playerRank;
+    private string playerRank;
     private string[] playerTitles = new string[] {"Bunty Beginner", "Wooly Apprentice", "Sure-footed Shepherd", "Head of the Herd"};
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI playerRankText;
@@ -47,11 +49,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float spawnRangeZ = 40;
 
     public bool isGameOver = false;
+    public bool isGamePaused = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
         StartCoroutine(Spawner(maxEnemyInterval, enemyPrefab));
         StartCoroutine(Spawner(maxSheepInterval, sheepPrefab));
         
@@ -76,11 +78,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
- 
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
-
     /* UI MANAGEMENT */
+    
     // Display current score and high score
     void UpdateScore(){
         score = herdSize;
@@ -119,8 +121,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /* END OF UI MANAGEMENT */
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
     /* GAME STATES */
+
     public void GameOver()
     {
         // Stop game from running in background
@@ -133,6 +139,7 @@ public class GameManager : MonoBehaviour
         // Pause game from running in background
         Time.timeScale = 0f;
         pauseGamePanel.SetActive(true);
+        isGamePaused = true;
     }
 
     public void ResumeGame()
@@ -140,13 +147,23 @@ public class GameManager : MonoBehaviour
         // Resume normal game time
         Time.timeScale = 1.0f;
         pauseGamePanel.SetActive(false);
+        isGamePaused = false;
+    }
+
+    public void QuitGame()
+    {
+        // Quit the Game and close the application
+        Debug.Log("Quit Game!");
+        Application.Quit();
     }
 
     /* END OF GAME STATES*/
 
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////
-    
     /* LEVEL MANAGEMENT */
+
     // Loads the specified scene
     public async void LoadScene(string sceneName)
     {
@@ -180,5 +197,12 @@ public class GameManager : MonoBehaviour
 
         Vector3 randomPos = new Vector3(spawnPosX, 0, spawnPosZ);
         return randomPos;
+    }
+
+    public void PlayParticleFX(Transform playPos)
+    {
+        // Check if the object wants to play the blood animation (for sheep death) or the explosion animation (for enemy death)
+        bloodSplatter.transform.position = playPos.position;
+        bloodSplatter.Play();
     }
 }
