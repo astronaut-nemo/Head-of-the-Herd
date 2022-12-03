@@ -65,13 +65,13 @@ public class Sheep : MonoBehaviour
             // If sheep is in range then add to parent group
             Debug.Log("Come 'ere sheep!");
             this.transform.SetParent(herdCenter.transform);
-            gameManager.herdSize ++;
             
             // Arrange sheep in herd: on adding a sheep, check the size of the herd and calculate the angle between sheep in each ring. Each ring has a specified no of sheep it can hold
             // Maybe store new sheep children into an array and then use AI behaviour to control them
 
             isInHerd = true;
             SoundManager.instance.PlaySound(sheepJoinClip);
+            gameManager.herdSize ++;
         }
     }
 

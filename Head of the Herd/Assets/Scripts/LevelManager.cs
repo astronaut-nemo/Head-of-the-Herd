@@ -7,11 +7,16 @@ public class LevelManager : MonoBehaviour
 {
     public GameObject gameOverPanel;
     public GameObject pauseGamePanel;
+
+    // Sheep Variables
+    public int herdSize;
+   
     
     // Start is called before the first frame update
     void Awake()
     {
         Time.timeScale = 0f;
+        herdSize = 0;
     }
 
     // Update is called once per frame
