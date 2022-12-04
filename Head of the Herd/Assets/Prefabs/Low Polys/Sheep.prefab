@@ -203,8 +203,8 @@ MonoBehaviour:
   sheepDieClip: {fileID: 8300000, guid: b65cc5f1243846248ae8b92db919b3ba, type: 3}
   enemyEatClip: {fileID: 8300000, guid: 65cb25e8f51751f49a3a0ef5f1afc1ff, type: 3}
   isInHerd: 0
-  maxAttractDistance: 4
-  rotationSpeed: 30
+  maxAttractDistance: 3.5
+  rotationSpeed: 35
 --- !u!95 &1848904068
 Animator:
   serializedVersion: 4

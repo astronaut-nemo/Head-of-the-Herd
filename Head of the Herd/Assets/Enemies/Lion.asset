@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e2c29a151f1ef54eae026c3e2dc8a6d, type: 3}
   m_Name: Lion
   m_EditorClassIdentifier: 
-  hp: 30
-  speed: 0.75
+  hp: 20
+  speed: 2
